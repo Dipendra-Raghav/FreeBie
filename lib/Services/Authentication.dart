@@ -25,4 +25,10 @@ class Authentication {
 
     return 'Error occured';
   }
+
+  Future<String> googleSignOut() async {
+    _googleSignIn.signOut();
+
+    return 'Error out';
+  }
 }
