@@ -1,3 +1,4 @@
+import 'package:course_selling/Screens/HomeScreen.dart';
 import 'package:course_selling/Screens/signingoptions/signUp.dart';
 import 'package:course_selling/Services/Authentication.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
@@ -38,7 +39,13 @@ class _SignInState extends State<SignIn> {
                 child: FlatButton.icon(
                     color: Colors.white,
                     onPressed: () async {
-                      await authentication.googleSignIn();
+                      await authentication.googleSignIn().whenComplete(() {
+                        Navigator.pushReplacement(
+                            context,
+                            PageTransition(
+                                child: const Homescreen(),
+                                type: PageTransitionType.rightToLeftWithFade));
+                      });
                     },
                     icon: Icon(EvaIcons.google),
                     label: Text('Sign in with google')),
