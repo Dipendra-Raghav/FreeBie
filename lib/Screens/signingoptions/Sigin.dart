@@ -1,4 +1,5 @@
 import 'package:course_selling/Screens/signingoptions/signUp.dart';
+import 'package:course_selling/Services/Authentication.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
@@ -11,6 +12,8 @@ class SignIn extends StatefulWidget {
 }
 
 class _SignInState extends State<SignIn> {
+  Authentication authentication = Authentication();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,8 +37,8 @@ class _SignInState extends State<SignIn> {
                 padding: const EdgeInsets.only(bottom: 15.0),
                 child: FlatButton.icon(
                     color: Colors.white,
-                    onPressed: () {
-                      print('Google sign in...');
+                    onPressed: () async {
+                      await authentication.googleSignIn();
                     },
                     icon: Icon(EvaIcons.google),
                     label: Text('Sign in with google')),

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "363982283620",
+    "project_id": "freebie-25ec2",
+    "storage_bucket": "freebie-25ec2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363982283620:android:b1c28327e03084b0d99071",
+        "android_client_info": {
+          "package_name": "com.example.course_selling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363982283620-k2lpdtovct4h6ukqrm06l2dio9oc4uqb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.course_selling",
+            "certificate_hash": "b4f9d59593f6d911a70c48b8f84ed5afdb2a3620"
+          }
+        },
+        {
+          "client_id": "363982283620-5ahgdfbeftdukbh35otd0e9ljvp0eg85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7Ihme30SmUA5OgXjJ3sxB5_IAtzJtNFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363982283620-5ahgdfbeftdukbh35otd0e9ljvp0eg85.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
